@@ -1,0 +1,152 @@
+.bgimage {
+   background: {
+   image: asset_url("bg.png");
+   }
+   	background-size: 1220px 710px;
+   	background-repeat: no-repeat;
+   	height: 710px;
+   	margin-top: 0px;
+}
+@media print {
+  div.info, div.test4, div.test5 {
+    display: none;
+  }
+}
+
+/***************************************/
+
+.sname {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 100px;
+	margin-left: 150px;
+}
+.fname {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -21px;
+	margin-left: 650px;
+}
+.dob {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-left: 200px;
+}
+.nyreg {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -19px;
+	margin-left: 880px;
+}
+.subs {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-left: 250px;
+	word-spacing: 63px;
+}
+.prereg {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-left: 350px;
+}
+.board {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -19px;
+	margin-left: 820px;
+}
+.local {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 9px;
+	margin-left: 283px;
+}
+.religion {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -19px;
+	margin-left: 550px;
+}
+.cnic {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -19px;
+	margin-left: 780px;
+	letter-spacing: 17px;
+}
+.peraddress {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 7px;
+	margin-left: 250px;
+	width: 416px;
+	height: 25px;
+}
+.preaddress {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: -25px;
+	margin-left: 812px;
+	width: 400px;
+	height: 25px;
+}
+.challan {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 520px;
+}
+.amount {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -22px;
+	margin-left: 740px;
+}
+.date {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -22px;
+	margin-left: 990px;
+}
+.table {
+	margin-top: 65px;
+}
+.records {
+	font-size: 18px;
+	font-weight: bold;
+}
+.year {
+	margin-top: 15px;
+	margin-left: 270px;
+}
+.annu {
+	margin-top: -22px;
+	margin-left: 400px;
+}
+.roll {
+	margin-top: -22px;
+	margin-left: 570px;
+}
+.divis {
+	margin-top: -22px;
+	margin-left: 700px;
+}
+.sub {
+	font-size: 14px;
+	margin-top: -19px;
+	margin-left: 858px;
+}
+.univ {
+	font-size: 12px;
+	margin-top: -17px;
+	margin-left: 1022px;
+}
+
+/***************************************/
+
+.test4 {
+	margin-top: 280px;
+	margin-left: 65%;
+}

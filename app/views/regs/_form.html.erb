@@ -1,0 +1,115 @@
+<%= form_for(@reg) do |f| %>
+  <% if @reg.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@reg.errors.count, "error") %> prohibited this reg from being saved:</h2>
+
+      <ul>
+      <% @reg.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table>
+	<tr>
+		<th><%= f.label :sname, "Full Name" %></th>
+		<th><%= f.label :fname, "Father's Name" %></th>
+		<th><%= f.label :dob, "Date of Birth" %></th>
+		<th><%= f.label :n_y_reg, "Name & Year of Registration" %></th>
+	</tr>
+	<tr>
+		<td><%= f.text_field :sname, class: 'test', :autofocus => true %></td>
+		<td><%= f.text_field :fname, class: 'test' %></td>
+		<td><%= f.date_select :dob, {:start_year => 1980, :end_year => 1995, order: [:day, :month, :year], use_two_digit_numbers: true}, {class: "test"} %></td>
+		<td><%= f.text_field :n_y_reg, class: 'test' %></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th colspan="3",><%= f.label :subject_id, "Select Subjects Which You Want to Gives Exams" %></th>
+	</tr>
+	<tr>
+		<th>I</th>
+		<th>II</th>
+		<th>III</th>
+		<th>IV</th>
+		<th>V</th>
+	</tr>
+	<tr>
+		<%= f.fields_for :subs do |s| %>
+					<td><%= s.text_field :title, class: 'test', :size => "13x5" %></td>
+		<% end %>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th><%= f.label :pre_reg, "Previous Registration Number" %></th>
+		<th><%= f.label :board, "Board / University" %></th>
+		<th><%= f.label :local_domicile, "Local / Domicile of District" %></th>
+		<th><%= f.label :cnic, "CNIC Number" %></th>
+	</tr>
+	<tr>
+		<td><%= f.text_field :pre_reg, class: 'test' %></td>
+		<td><%= f.text_field :board, class: 'test' %></td>
+		<td><%= f.text_field :local_domicile, class: 'test' %></td>
+		<td><%= f.text_field :cnic, class: 'test', :size => "11x5" %></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th><%= f.label :per_address, "Permanent Address" %></th>
+		<th><%= f.label :pre_address, "Present Address" %></th>
+	</tr>
+	<tr>
+		<td><%= f.text_area :per_address, :size => "46x3", class: 'test' %></td>
+		<td><%= f.text_area :pre_address, :size => "46x3", class: 'test' %></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th><%= f.label :religion, "Religion" %></th>
+		<th><%= f.label :challan, "Registration fee Challan Number" %></th>
+		<th><%= f.label :amount %></th>
+		<th><%= f.label :date %></th>
+	</tr>
+	<tr>
+		<td><%= f.text_field :religion, class: 'test' %></td>
+		<td><%= f.text_field :challan, class: 'test' %></td>
+		<td><%= f.text_field :amount, class: 'test' %></td>
+		<td><%= f.date_select :date, {:start_year => 2015, :end_year => 2015, order: [:day, :month, :year], use_two_digit_numbers: true}, {class: "test"} %></td>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<th><%= f.label :examination_id %></th>
+		<th><%= f.label :year %></th>
+		<th><%= f.label :annual_supply, "Annual / Supply" %></th>
+		<th><%= f.label :roll_no, "Roll Number" %></th>
+		<th><%= f.label :division %></th>
+		<th><%= f.label :sub_pass, "Subject Passed" %></th>
+		<th><%= f.label :board_university, "Board / University" %></th>
+	</tr>
+	<%= f.fields_for :exams do |e| %>
+		<tr>
+				<td><%= e.select(:name, options_for_select([['S.S.C (Matric)'], ['H.S.C (F.A / F.Sc)'], ['B.A / B.Sc / B.Com'], ['M.A / M.Sc / M.Com'], ['Other']], :selected => e.object.name), {:prompt => ""}, {class:'test'}) %></td>
+				<td><%= e.text_field :year, class: 'test', :size => "3x5" %></td>
+				<td><%= e.select(:annu_supp, options_for_select([['Annual'], ['Supply']], :selected => e.object.annu_supp), {:prompt => ""}, {class:'test'}) %></td>
+				<td><%= e.text_field :roll_num, class: 'test', :size => "5x5" %></td>
+				<td><%= e.select(:divis, options_for_select([['1st Division'], ['2nd Division'], ['3rd Division']], :selected => e.object.divis), {:prompt => ""}, {class:'test'}) %></td>
+				<td><%= e.text_field :sub_pass, class: 'test', :size => "15x5" %></td>
+				<td><%= e.text_field :boar_univ, class: 'test', :size => "15x5" %></td>
+		</tr>
+	<% end %>
+</table>
+<br><br>
+
+  <div>
+    <%= f.submit 'Submit to Registor', class: 'test2' %>
+  </div>
+<% end %>

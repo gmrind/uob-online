@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UOB Online</title>
+  <meta charset='utf-8' />
+	<%= stylesheet_link_tag 'application', :media => "all" %>
+  <%= stylesheet_link_tag 'reg', :media => :print if controller_name == "regs" && action_name == "show" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

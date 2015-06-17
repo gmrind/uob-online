@@ -1,0 +1,82 @@
+<div class=topheader>
+
+	<div class=topcontact>
+		<div class=navbar-2>
+			<ul>
+				<li><%= link_to 'Sign Up' %></li>
+				<li><%= link_to 'Login' %></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class=topseach>
+	<%= form_for :search do |s| %>
+		<%= s.text_field :search, :placeholder => "  Click Here to Search", class: 'search-box' %>
+		<%= image_submit_tag('btn-search.png', :size => '50x50', class: 'search-btn') %>
+	<% end %>
+	</div>
+
+	<div class=toppages>
+		<%= link_to image_tag("facebook.png", :size => '32x32', class: 'toppages-1', :title => 'Facebook'), "http://www.facebook.com/GhulaMurtazaRind" %>
+		<%= link_to image_tag("twitter.png", :size => '32x32', class: 'toppages-1', :title => 'Twitter'), "http://www.twitter.com/murtazarind" %>
+		<%= link_to image_tag("googleplus.png", :size => '32x32', class: 'toppages-1', :title => 'Google Plus'), "http://plus.google.com/u/0/115863481963671806047" %>
+		<%= link_to image_tag("github.png", :size => '32x32', class: 'toppages-1', :title => 'Git Hub'), "http://github.com/gmrind" %>
+		<%= link_to image_tag("email.png", :size => '32x32', class: 'toppages-1', :title => 'Email Address'), "mailto:murtazarind.11@gmail.com" %>
+	</div>
+
+</div>
+
+<div class=header>
+	<div class=uoblogo>
+		<%= image_tag('uob-logo.png', :size => '80x80') %>
+	</div>
+
+	<div class=webtitle>
+		<h1 class=webtitle-h1>UOB Online</h1>
+		<p class=webtitle-p> Fill up your University of Balochistan neccessray form Online </p>
+	</div>
+
+	<div class=ads>
+		<%= image_tag('top-ads.gif') %>
+	</div>
+</div>
+
+<div class="navbar">
+	<ul>
+		<li><%= link_to 'Home', pages_index_path %></li>
+		<li><%= link_to 'Registration', new_reg_path %></li>
+		<li><%= link_to 'Examination', pages_examination_path %></li>
+		<li><%= link_to 'Result', pages_result_path %></li>
+		<li><%= link_to 'Scholarship', pages_scholarship_path %></li>
+		<li><%= link_to 'Event', pages_event_path %></li>
+	</ul>
+</div>
+
+<div class=leftsidebar>
+	<div class="leftsidebar-1">
+		<h3 class=h3text>Subscribe By Email</h3>
+		<%= form_for :subscribe do |sub| %>
+		<%= sub.text_field :subscribe, :placeholder => "           Enter Your Email", class: 'subscribe-box' %>
+		<%= sub.submit 'Subscribe', class: 'subscribe-btn' %>
+	<% end %>
+	</div>
+	<div class=leftsidebar-2>
+		<h3 class=h3text>UOB Online News</h3>
+		<marquee class="marquee" direction="up" scrollamount="3" onmouseover="this.setAttribute('scrollamount', 0, 0);" onmouseout="this.setAttribute('scrollamount', 3, 0);">
+
+		<% Update.all.each do |news| %><br><br>
+		<%= link_to news.title, news %>
+    <% end %>
+
+</marquee>
+	</div>
+	<div class=leftsidebar-3>
+		<h3 class=h3text>Advertisment</h3>
+		<%= image_tag('ads-300.gif') %>
+	</div>
+	<div class=leftsidebar-4>
+		<h3 class=h3text>Like Us Page</h3>
+		<%= image_tag('like-us.png', :size => '300x250') %>
+	</div>
+</div>
+<br><br><br>

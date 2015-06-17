@@ -1,0 +1,101 @@
+.sname {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+.fname {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -18px;
+	margin-left: 650px;
+}
+.dob {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 200px;
+}
+.nyreg {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -18px;
+	margin-left: 870px;
+}
+.subs {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-left: 250px;
+	word-spacing: 90px;
+}
+.prereg {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-left: 350px;
+}
+.board {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -18px;
+	margin-left: 820px;
+}
+.local {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-left: 280px;
+}
+.cnic {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -15px;
+	margin-left: 765px;
+	letter-spacing: 17px;
+}
+.peraddress {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 6px;
+	margin-left: 245px;
+	width: 400px;
+}
+.preaddress {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: -16px;
+	margin-left: 810px;
+}
+.challan {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -9px;
+	margin-left: 520px;
+}
+.amount {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -18px;
+	margin-left: 740px;
+}
+.date {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: -18px;
+	margin-left: 990px;
+}
+.records {
+	font-size: 18px;
+	margin-top: 60px;
+	margin-left: 270px;
+	padding-left: 50px;
+}
+.year {
+	font-size: 18px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.annu {
+
+}

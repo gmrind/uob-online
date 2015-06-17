@@ -1,0 +1,83 @@
+
+<div class="sname">
+	<%= @reg.sname %>
+</div>
+
+<div class="fname">
+	<%= @reg.fname %>
+</div>
+
+<div class="dob">
+	<%= @reg.dob %>
+</div>
+
+<div class="nyreg">
+	<%= @reg.n_y_reg %>
+</div>
+
+<div class="subs">
+	<% for sub in @reg.subs %>
+		<%= sub.title %>
+	<% end %>
+</div>
+
+<div class="prereg">
+	<%= @reg.pre_reg %>
+</div>
+
+<div class="board">
+	<%= @reg.board %>
+</div>
+
+<div class="local">
+	<%= @reg.local_domicile %>
+</div>
+
+<div class="religion">
+	<%= @reg.religion %>
+</div>
+
+<div class="cnic">
+	<%= @reg.cnic %>
+</div>
+
+<div class="peraddress">
+	<%= @reg.per_address %>
+</div>
+
+<div class="preaddress">
+	<%= @reg.pre_address %>
+</div>
+
+<div class="challan">
+	<%= @reg.challan %>
+</div>
+
+<div class="amount">
+	<%= @reg.amount %>
+</div>
+
+<div class="date">
+	<%= @reg.date %>
+</div>
+<div class="table">
+<% for exam in @reg.exams %>
+	<div class="records">
+		<div class="year"><%= exam.year %></div>
+		<div class="annu"><%= exam.annu_supp %></div>
+		<div class="roll"><%= exam.roll_num %></div>
+		<div class="divis"><%= exam.divis %></div>
+		<div class="sub"><%= exam.sub_pass %></div>
+		<div class="univ"><%= exam.boar_univ %></div>
+	</div>
+</div>
+<% end %>
+
+<div>
+	<%= link_to 'Edit', edit_reg_path(@reg) %>
+</div>
+<div>
+	<%= link_to "PRINT", '#', onclick: "printpage()" %>
+</div>
+
+<script>$('body').addClass('show-page');</script>

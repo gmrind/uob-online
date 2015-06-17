@@ -1,0 +1,18 @@
+<%= render 'pages/index' %>
+
+<div class=yield>
+
+<div class=news-title>
+  <strong><%= @update.title %></strong>
+</div>
+
+<div class=news-date>
+  <%= @update.date %>
+</div>
+
+<div class=news-article>
+  <%= @update.text.html_safe %>
+</div>
+
+</div>
+<%= render 'pages/footer' %>

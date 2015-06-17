@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sname: MyString
+  fname: MyString
+  dob: 2015-06-02
+  n_y_reg: MyString
+  subject_id: 
+  pre_reg: MyString
+  board: MyString
+  local_domicile: MyString
+  cnic: MyString
+  per_address: MyString
+  pre_address: MyString
+  challan: MyString
+  amount: MyString
+  date: 2015-06-02
+  year: 1
+  annual_supply: MyString
+  roll_no: MyString
+  division: MyString
+  sub_pass: MyString
+  board_university: MyString
+  examination_id: 
+
+two:
+  sname: MyString
+  fname: MyString
+  dob: 2015-06-02
+  n_y_reg: MyString
+  subject_id: 
+  pre_reg: MyString
+  board: MyString
+  local_domicile: MyString
+  cnic: MyString
+  per_address: MyString
+  pre_address: MyString
+  challan: MyString
+  amount: MyString
+  date: 2015-06-02
+  year: 1
+  annual_supply: MyString
+  roll_no: MyString
+  division: MyString
+  sub_pass: MyString
+  board_university: MyString
+  examination_id: 

@@ -1,0 +1,266 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+/***********************************/
+
+.topheader {
+ 	width: 100%;
+ 	height: 40px;
+ 	margin: 0px;
+ }
+ 	.topcontact {
+ 		background-color: green;
+ 		width: 19.1%;
+ 		line-height: 40px;
+ 		float: left;
+ 		color: white;
+ 		padding-left: 10px;
+ 	}
+ 	.topseach {
+ 		background-color: #2B5D28;
+ 		width: 60%;
+ 		height: 40px;
+ 		float: left;
+ 		color: white;
+ 	}
+ 		.search-btn {
+ 			float: right;
+ 			height: 40px;
+ 			width: 7%;
+ 		}
+ 		.search-btn:hover {
+ 			opacity: 0.8;
+ 		}
+ 		.search-box {
+			background-color: #86B404;
+			border: 0px;
+			width: 92.7%;
+			height: 38px;
+			font-size: 22px;
+			color: white;
+ 		}
+ 	.toppages {
+ 		background-color: #2B5D28;
+ 		width: 19.5%;
+ 		height: 36px;
+ 		float: left;
+ 		color: white;
+ 		padding-top: 4px;
+ 		padding-left: 6px;
+ 	}
+ 	.toppages-1 {
+ 		padding-left: 10px;
+ 	}
+ 	.toppages-1:hover {
+ 		opacity: 0.8;
+ 		margin-left: 2px;
+ 	}
+
+/***********************************/
+
+.header {
+	background-color: #B1DCA6;
+	width: 100%;
+	height: 92px;
+	margin-top: 0px;
+	}
+	.uoblogo {
+		float: left;
+		background-color: #B1DCA6;
+		margin-top: 5px;
+	}
+	.webtitle {
+		float: left;
+	}
+	.webtitle-h1 {
+		text-align: center;
+		text-shadow: 5px -2px 1px black;
+		font-size: 46px;
+		color: white;
+		margin-top: 5px;
+		line-height: 60px;
+		background-color: green;
+	}
+	.webtitle-p {
+		text-align: center;
+		margin-top: -35px;
+		text-shadow: 2px 1px 1px white;
+		font-weight: bold;
+		background-color: #86B404;
+	}
+	.ads {
+	 float: right;
+	 border: 1px solid green;
+	 width: 728px;
+	 height: 90px;
+	 text-align: center;
+	}
+
+/***********************************/
+
+.navbar {
+	background-color: #2B5D28;
+	width: 100%;
+	line-height:20px;
+	float:left;
+	}
+	.navbar ul {
+		margin:0px;
+		padding:10px;
+	}
+	.navbar ul li {
+		list-style-type:none;
+		display:inline-block;
+	}
+	.navbar ul li a {
+		text-decoration: none;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+		color: white;
+		padding: 11px 20px;
+		text-shadow: 0px 0px 3px black;
+	}
+	.navbar ul li a:hover {
+		background-color: #065600;
+		box-shadow: 0px 5px 0px #89B503;
+		font-size: 15px;
+}
+
+.navbar-2 {
+	width: auto;
+	height: 40px;
+	float: left;
+	margin-left: 2px;
+	}
+	.navbar-2 ul {
+		padding: 0px;
+		margin: 0px;
+	}
+	.navbar-2 ul li {
+		list-style-type: none;
+		display: inline-block;
+		background-color: #2B5D28;
+		text-shadow: 0px 0px 1px black;
+		margin-left: 2px;
+		padding-top: 0px;
+		height: 40px;
+	}
+	.navbar-2 ul li a {
+		text-decoration: none;
+		text-align: center;
+		font-size: 14px;
+		color: white;
+		padding: 12px 30px;
+	}
+	.navbar-2 ul li a:hover {
+		background-color: green;
+	}
+
+/***********************************/
+
+.yield {
+	padding: 15px;
+}
+
+/***********************************/
+
+.leftsidebar {
+	float: right;
+	background-color: #2B5D28;
+	width: 300px;
+	padding: 5px;
+	margin-top: 5px;
+	}
+	.leftsidebar-1 {
+		background-color: #B1DCA6;
+		width: 300px;
+		height: auto;
+		margin-top: -11px;
+		padding-bottom: 9px;
+	}
+		.subscribe-box {
+			background-color: #86B404;
+			border: 0px;
+			width: 292px;
+			line-height: 35px;
+			font-size: 22px;
+			color: white;
+			margin-top: -5px;
+			margin-left: 3px;
+			box-shadow: 0px 0px 0px 1px #065600;
+		}
+		.subscribe-btn {
+			width: 280px;
+			line-height: 35px;
+			border: 0px;
+			margin-top: 9px;
+			background-color: green;
+			margin-left: 9px;
+			color: white;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		.subscribe-btn:hover {
+			background-color: #065600;
+		}
+	.leftsidebar-2 {
+		background-color: #B1DCA6;
+		width: 300px;
+		height: 250px;
+		margin-top: -11px;
+		padding-bottom: 10px;
+	}
+		.marquee {
+			position: absolute;
+			width: 290px; /*marquee width */
+			overflow: hidden;
+			padding: 2px;
+			padding-left: 10px;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.marquee a {
+			text-decoration: none;
+			color: blue;
+		}
+		.marquee a:hover {
+			text-decoration: underline;
+		}
+
+	.leftsidebar-3 {
+		background-color: #B1DCA6;
+		width: 300px;
+		height: auto;
+		margin-top: -10px;
+	}
+	.leftsidebar-4 {
+		background-color: #B1DCA6;
+		width: 300px;
+		height: auto;
+		margin-top: -10px;
+}
+.h3text {
+	text-align: center;
+	line-height: 30px;
+	padding: 2px;
+	background: #065600;
+	color: white;
+	box-shadow: 0px 2px 2px black;
+}
+
+/***********************************/
+
+.footer {
+	float: left;
+	background-color: #2B5D28;
+	width: 100%;
+	height: auto;
+	position: relative;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 3px black;
+	box-shadow: 0px -4px 0px white;
+}
