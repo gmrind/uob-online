@@ -1,3 +1,4 @@
+<div class=bgimage>
 
 <div class="sname">
 	<%= @reg.sname %>
@@ -60,6 +61,7 @@
 <div class="date">
 	<%= @reg.date %>
 </div>
+
 <div class="table">
 <% for exam in @reg.exams %>
 	<div class="records">
@@ -70,14 +72,11 @@
 		<div class="sub"><%= exam.sub_pass %></div>
 		<div class="univ"><%= exam.boar_univ %></div>
 	</div>
-</div>
 <% end %>
-
-<div>
-	<%= link_to 'Edit', edit_reg_path(@reg) %>
-</div>
-<div>
-	<%= link_to "PRINT", '#', onclick: "printpage()" %>
 </div>
 
-<script>$('body').addClass('show-page');</script>
+<div class="test4">
+	<%= link_to 'Edit', edit_reg_path(@reg) %> | <%= link_to "Print", '#', onclick: "printpage()" %>
+</div>
+
+</div>
