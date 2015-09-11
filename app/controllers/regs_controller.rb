@@ -21,7 +21,7 @@ class RegsController < ApplicationController
   # GET /regs/new
   def new
     @reg = Reg.new
-    5.times { @reg.subs.build }
+    3.times { @reg.subs.build }
     5.times { @reg.exams.build }
   end
 
